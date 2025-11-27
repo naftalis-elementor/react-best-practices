@@ -1,6 +1,6 @@
 import { Stack } from "@mui/joy";
 import { createContext, FC, useCallback, useContext, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 import { NextButton, PreviousButton } from "./buttons";
 
 const PresentationContext = createContext({
