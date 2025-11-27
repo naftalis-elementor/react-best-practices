@@ -5,10 +5,8 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  useNavigate,
-  useLocation,
   Outlet,
-} from "react-router-dom";
+} from "react-router";
 import App from "./App.tsx";
 import "./index.css";
 import Declarative from "./lectures/declarative-react/index.tsx";
@@ -17,10 +15,12 @@ import ThemeProvider from "./providers/theme-provider.tsx";
 import CursorFollow from "./lectures/cursor-follow/index.tsx";
 import LivingBackground from "./lectures/living-background/index.tsx";
 import GravityBackground from "./lectures/gravity-background/index.tsx";
+import Css from "./lectures/css/css.tsx";
+import AccentColor from "./lectures/css/accent-color.tsx";
 
 function Layout() {
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
   return (
     <>
@@ -75,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "gravity-background",
         element: <GravityBackground />,
+      },
+      {
+        path: "css/*",
+        element: <Css />,
       },
     ],
   },
