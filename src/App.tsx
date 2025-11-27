@@ -1,5 +1,5 @@
 import { Button, Stack } from "@mui/joy";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function App() {
   const navigate = useNavigate();
@@ -46,6 +46,13 @@ function App() {
           }}
         >
           Gravity Background
+        </Button>
+        <Button
+          onClick={() => {
+            navigate("/css");
+          }}
+        >
+          CSS
         </Button>
       </Stack>
     </Stack>
