@@ -82,7 +82,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: "/react-best-practices/",
+});
 
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider colorScheme="dark">

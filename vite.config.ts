@@ -20,4 +20,7 @@ export default defineConfig({
   },
   assetsInclude: ["**/*.jsx"],
   base: "/react-best-practices/",
+  build: {
+    outDir: "docs",
+  },
 });
