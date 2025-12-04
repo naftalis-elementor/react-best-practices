@@ -19,5 +19,5 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.jsx"],
-  base: "https://naftalis-elementor.github.io/",
+  base: "https://naftalis-elementor.github.io/react-best-practices/",
 });
